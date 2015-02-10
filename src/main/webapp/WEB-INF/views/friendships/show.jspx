@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_amp_fbuservisual_model_Friendship" object="${friendship}" path="/friendships" z="3bp5ymv1HvxPZHVh8TA8zUDFD6k=">
+        <field:display field="ffname" id="s_com_amp_fbuservisual_model_Friendship_ffname" object="${friendship}" z="LXTviSaz1e+dUbpidz3WjFQpFXo="/>
+        <field:display field="fimglink" id="s_com_amp_fbuservisual_model_Friendship_fimglink" object="${friendship}" z="R8KFbb5ksApBn9s3AF7Ezj8OHV4="/>
+        <field:display field="flink" id="s_com_amp_fbuservisual_model_Friendship_flink" object="${friendship}" z="bRA9B55sXnhuM6eb24ncyHkqMFo="/>
+        <field:display field="ftags" id="s_com_amp_fbuservisual_model_Friendship_ftags" object="${friendship}" z="UE3a7miH1fCpKOZyhExk7QNCToo="/>
+        <field:display field="ftaglink" id="s_com_amp_fbuservisual_model_Friendship_ftaglink" object="${friendship}" z="MiYR+BMaJUxhKdxgEZkK/gIVUOg="/>
+        <field:display field="isfriend" id="s_com_amp_fbuservisual_model_Friendship_isfriend" object="${friendship}" z="PB1KCOKV7ub7qC9kmBCvZMtNyTU="/>
+        <field:display calendar="true" dateTimePattern="${friendship_updatatime_date_format}" field="updatatime" id="s_com_amp_fbuservisual_model_Friendship_updatatime" object="${friendship}" z="AvfgLpY4k94+LYGJbcJIsfiz87M="/>
+    </page:show>
+</div>

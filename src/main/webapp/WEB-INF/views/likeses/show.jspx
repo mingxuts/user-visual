@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_amp_fbuservisual_model_Likes" object="${likes}" path="/likeses" z="2jwTMa0nTiO+Q5KyeHYBRNg4QZI=">
+        <field:display field="llink" id="s_com_amp_fbuservisual_model_Likes_llink" object="${likes}" z="qRRAFFsn5xT3L7fF/TgIPfwgPtU="/>
+        <field:display field="lname" id="s_com_amp_fbuservisual_model_Likes_lname" object="${likes}" z="6DhsPMTIAglZggYf6AJG/ImKs8I="/>
+        <field:display field="limglink" id="s_com_amp_fbuservisual_model_Likes_limglink" object="${likes}" z="x6u1TUEFrkT8irf8bEOLi4dz5Nc="/>
+        <field:display field="ltag" id="s_com_amp_fbuservisual_model_Likes_ltag" object="${likes}" z="85RDYOboulAFr+H7KhmfDFdz0Eo="/>
+        <field:display calendar="true" dateTimePattern="${likes_updatatime_date_format}" field="updatatime" id="s_com_amp_fbuservisual_model_Likes_updatatime" object="${likes}" z="ZRChLHOCTl36F14SVDFToNmdwrM="/>
+    </page:show>
+</div>

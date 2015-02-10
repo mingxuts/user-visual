@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_amp_fbuservisual_model_Likes" items="${likeses}" z="f1lIBPBqMp8TyRRDS/4EnrAGXUc=">
+        <table:table data="${likeses}" id="l_com_amp_fbuservisual_model_Likes" path="/likeses" z="K9NkDd4z3DoVR6HEekkz7q03/2s=">
+            <table:column id="c_com_amp_fbuservisual_model_Likes_llink" property="llink" z="5+LUXO7O4VEVvtSBlEzqpZEuijY="/>
+            <table:column id="c_com_amp_fbuservisual_model_Likes_lname" property="lname" z="7NcsUoR0VyKTjol5sgto4f1sDQw="/>
+            <table:column id="c_com_amp_fbuservisual_model_Likes_limglink" property="limglink" z="5qa7Xo/Lw7EvS70njU8EwNPd3LM="/>
+            <table:column id="c_com_amp_fbuservisual_model_Likes_ltag" property="ltag" z="x9+Dc9rS/je5diLZrw/GMpEtvlc="/>
+            <table:column calendar="true" dateTimePattern="${likes_updatatime_date_format}" id="c_com_amp_fbuservisual_model_Likes_updatatime" property="updatatime" z="U2ZPksbIMnI8G4y6d7EUL+Nk5lE="/>
+        </table:table>
+    </page:list>
+</div>

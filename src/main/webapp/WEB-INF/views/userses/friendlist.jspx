@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" 
+xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields"  version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+    <util:panel title="Facebook User Friends" id="fb_user_friends">
+        <table:table data="${friendships}" id="l_com_amp_fbuservisual_model_Friendship" path="/friendships" >
+            <table:column id="c_com_amp_fbuservisual_model_Friendship_ffname" property="ffname" />
+            <table:column id="c_com_amp_fbuservisual_model_Friendship_ftags" property="ftags" />
+            <table:column id="c_com_amp_fbuservisual_model_Friendship_ftaglink" property="ftaglink"/>
+            <table:column id="c_com_amp_fbuservisual_model_Friendship_isfriend" property="isfriend"/>
+        </table:table>		
+    </util:panel>
+</div>

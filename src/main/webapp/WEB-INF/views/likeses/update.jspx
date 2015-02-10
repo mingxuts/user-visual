@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_amp_fbuservisual_model_Likes" modelAttribute="likes" path="/likeses" versionField="none" z="AqWbfeAGB427i+jculdR/wineEU=">
+        <field:input field="llink" id="c_com_amp_fbuservisual_model_Likes_llink" z="Nn74jq+U9MH1PbmR4OubN8JFyj8="/>
+        <field:input field="lname" id="c_com_amp_fbuservisual_model_Likes_lname" z="jW7qadgIi/bXImbi53MX7KI2AtY="/>
+        <field:input field="limglink" id="c_com_amp_fbuservisual_model_Likes_limglink" z="WfBZWzaK+1IZZEPy+NdB2I8+uz4="/>
+        <field:input field="ltag" id="c_com_amp_fbuservisual_model_Likes_ltag" z="7BnEPYP/bNStGd5CJniXIzFvZls="/>
+        <field:datetime dateTimePattern="${likes_updatatime_date_format}" field="updatatime" id="c_com_amp_fbuservisual_model_Likes_updatatime" z="AVzYp0ZtTWVlCmukJdA4U70F1nY="/>
+    </form:update>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" 
+xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+    <util:panel title="Facebook user like information" id="fb_user_like">
+        <table:table data="${likeses}" id="l_com_amp_fbuservisual_model_Likes" path="/likeses">
+            <table:column id="c_com_amp_fbuservisual_model_Likes_llink" property="llink" />
+            <table:column id="c_com_amp_fbuservisual_model_Likes_lname" property="lname"/>
+            <table:column id="c_com_amp_fbuservisual_model_Likes_limglink" property="limglink" render="false"/>
+            <table:column id="c_com_amp_fbuservisual_model_Likes_ltag" property="ltag"/>            
+        </table:table>    	
+    </util:panel>
+    
+</div>

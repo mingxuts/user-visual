@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_amp_fbuservisual_model_Users" items="${userses}" z="t33Ncg/ukUgZa+3HsVtV/dOM4wQ=">
+        <table:table data="${userses}" id="l_com_amp_fbuservisual_model_Users" path="/userses" z="2qUaMumjAAJlQCFXlQstKLH4Xco=">
+            <table:column id="c_com_amp_fbuservisual_model_Users_name" property="name" z="nh9JkQB3Ozov1WlP1QRPS4YjDP8="/>
+            <table:column id="c_com_amp_fbuservisual_model_Users_account" property="account" z="zmXN3XnG4/GNpJ2ZoyEQ/kwgb+M="/>
+            <table:column id="c_com_amp_fbuservisual_model_Users_imagesrc" property="imagesrc" render="false" z="user-managed"/>
+            <table:column id="c_com_amp_fbuservisual_model_Users_gender" property="gender" render="false" z="user-managed"/>
+            <table:column id="c_com_amp_fbuservisual_model_Users_relationship" property="relationship" z="qtsqv3N1aHQoHGHc1FLaSPLJfIE="/>
+            <table:column id="c_com_amp_fbuservisual_model_Users_phoneNumber" property="phoneNumber" render="false" z="user-managed"/>
+        </table:table>
+    </page:list>
+</div>

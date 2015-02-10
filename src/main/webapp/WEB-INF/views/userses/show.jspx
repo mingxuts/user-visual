@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_amp_fbuservisual_model_Users" object="${users}" path="/userses" z="ZEKkBTkw90cB7RHv0z85ozzvmMY=">
+        <field:display field="name" id="s_com_amp_fbuservisual_model_Users_name" object="${users}" z="Zo7rKP8/A0ELkjOC6vzEAC4cWyM="/>
+        <field:display field="account" id="s_com_amp_fbuservisual_model_Users_account" object="${users}" z="OcvRVkDSXsR9h0NvPeHQsLYi7+g="/>
+        <field:display field="imagesrc" id="s_com_amp_fbuservisual_model_Users_imagesrc" object="${users}" z="jMAMw/3n+YnOSmRgXBFqms/5ylU="/>
+        <field:display field="gender" id="s_com_amp_fbuservisual_model_Users_gender" object="${users}" z="ArAJIKQYdJXXJzckCzQIgg2ZxB0="/>
+        <field:display field="relationship" id="s_com_amp_fbuservisual_model_Users_relationship" object="${users}" z="L+wTp5K+bV0M/NFVbs77ZhgDewc="/>
+        <field:display field="phoneNumber" id="s_com_amp_fbuservisual_model_Users_phoneNumber" object="${users}" z="z/EsE4sEnTfvi7x2xbPnG5a6Bw4="/>
+        <field:display field="brithDay" id="s_com_amp_fbuservisual_model_Users_brithDay" object="${users}" z="dN9xb3d52yQqhrElj2m/ygqilWs="/>
+        <field:display field="address" id="s_com_amp_fbuservisual_model_Users_address" object="${users}" z="XkuGHo031GKlYCfBNXygldhnkgM="/>
+        <field:display field="website" id="s_com_amp_fbuservisual_model_Users_website" object="${users}" z="TGj/Z9wn8oXxYN8txBsa25niWkk="/>
+        <field:display field="interestedIn" id="s_com_amp_fbuservisual_model_Users_interestedIn" object="${users}" z="URXkSMKI41tR5ZTrvB+BiHWfih0="/>
+        <field:display field="language" id="s_com_amp_fbuservisual_model_Users_language" object="${users}" z="mSgy0L6Cm5Wdb7xQS8pKhP5Y1RM="/>
+        <field:display field="about" id="s_com_amp_fbuservisual_model_Users_about" object="${users}" z="WoUIK59Oe61sCXJoI2OdKyWs5Ag="/>
+        <field:display field="favoriteQuote" id="s_com_amp_fbuservisual_model_Users_favoriteQuote" object="${users}" z="Y7CvhFUlT4V0AAVeUoYhKHqdEiA="/>
+        <field:display field="isoriginal" id="s_com_amp_fbuservisual_model_Users_isoriginal" object="${users}" z="cyU7vqwCHWI18BovtqRN2KQdDhU="/>
+        <field:display calendar="true" dateTimePattern="${users_updatatime_date_format}" field="updatatime" id="s_com_amp_fbuservisual_model_Users_updatatime" object="${users}" z="ezcldHuIrkBGQUMAA8xbbtisHOs="/>
+    </page:show>
+</div>
