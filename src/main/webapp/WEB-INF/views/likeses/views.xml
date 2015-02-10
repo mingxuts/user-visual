@@ -13,4 +13,7 @@
 <definition extends="default" name="likeses/update">
         <put-attribute name="body" value="/WEB-INF/views/likeses/update.jspx"/>
     </definition>
+<definition extends="dialog" name="likeses/tabnav">
+        <put-attribute name="body" value="/WEB-INF/views/likeses/tabnav.jspx"/>
+    </definition>
 </tiles-definitions>

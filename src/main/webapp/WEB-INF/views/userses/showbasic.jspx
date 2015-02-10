@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" 
-xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     
-    <util:panel title="Facebook basic infomation" id="fb_user_basic">
-    	<img src="${userbasic.imagesrc}" alt="${userbasic.name}" />
-    	<dl>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#friends" aria-controls="friends" role="tab" data-toggle="tab">Friends</a></li>
+    <li role="presentation"><a href="#likes" aria-controls="likes" role="tab" data-toggle="tab">Likes</a></li>
+  </ul>
+  
+   <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="basic">
+    	<img src="${userbasic.imagesrc}" alt="" />
+     	<dl>
     		<dd>Name</dd>
     		<dt>- ${userbasic.name}</dt>
     		<dd>Website</dd>
@@ -17,6 +24,27 @@ xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
     		<dt>-${userbasic.address }</dt>
     		<dd>About</dd>
     		<dt>- ${userbasic.about}</dt> 		
-    	</dl>
-    </util:panel>
+    	</dl>    
+    </div>
+    <div role="tabpanel" class="tab-pane" id="friends">
+        <table:table data="${friendships}" id="l_com_amp_fbuservisual_model_Friendship" path="/friendships" >
+            <table:column id="c_com_amp_fbuservisual_model_Friendship_ffname" property="ffname" />
+            <table:column id="c_com_amp_fbuservisual_model_Friendship_ftags" property="ftags" />
+            <table:column id="c_com_amp_fbuservisual_model_Friendship_ftaglink" property="ftaglink"/>
+            <table:column id="c_com_amp_fbuservisual_model_Friendship_isfriend" property="isfriend"/>
+        </table:table>    
+    </div>
+    <div role="tabpanel" class="tab-pane" id="likes">
+        <table:table data="${likeses}" id="l_com_amp_fbuservisual_model_Likes" path="/likeses">
+            <table:column id="c_com_amp_fbuservisual_model_Likes_llink" property="llink" />
+            <table:column id="c_com_amp_fbuservisual_model_Likes_lname" property="lname"/>
+            <table:column id="c_com_amp_fbuservisual_model_Likes_limglink" property="limglink" render="false"/>
+            <table:column id="c_com_amp_fbuservisual_model_Likes_ltag" property="ltag"/>            
+        </table:table>     
+    </div>
+  </div>
+<script src="//oss.maxcdn.com/jquery/2.1.3/jquery.min.js" 
+type="text/javascript"><!-- required for FF3 and Opera --></script>     
+<script src="//oss.maxcdn.com/bootstrap/3.3.2/js/bootstrap.js" 
+type="text/javascript"><!-- required for FF3 and Opera --></script>      
 </div>

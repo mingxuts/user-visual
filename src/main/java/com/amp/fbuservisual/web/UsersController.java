@@ -35,17 +35,9 @@ public class UsersController {
 	@RequestMapping(value="/getuserpk")
 	public String getUserpk(Model uiModel, 
 			@RequestParam("uid") String userId,
-			@RequestParam("jid") String jobId,
-			@RequestParam("info") String information){
+			@RequestParam("jid") String jobId){
 		UsersPK userPK = new UsersPK(userId, jobId);
 		String url = "/showbasic";
-		if ("basic".equals(information)){
-			
-		}else if ("flist".equals(information)){
-			url = "/friendlist";
-		}else if ("like".equals(information)){
-			url = "/like";
-		}
 		return "redirect:/userses/" + conversionService.convert(userPK, String.class) + url;
 	}
 	
@@ -54,6 +46,10 @@ public class UsersController {
 		Users user = usersRepository.findOne(conversionService.convert(id, UsersPK.class));
 		if (user != null){
 			uiModel.addAttribute("userbasic", user);
+			List<Friendship> friendship = friendshipRepository.findById_Fid(user.getId().getFid());
+			uiModel.addAttribute("friendships", friendship);
+			List<Likes> userlikes = likesRepository.findById_Fid(user.getId().getFid());
+			uiModel.addAttribute("likeses", userlikes);			
 		}		
 		return "userses/showbasic";
 	}
